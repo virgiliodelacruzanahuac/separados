@@ -18,12 +18,15 @@ class _numunoState extends State<numuno> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: <Widget>[
-      Text("Num 1"),
-      new Flexible(child: new TextField(
-        keyboardType: TextInputType.number,
-        controller: n,
-      ))
-    ],)
+    return Row(
+      children: <Widget>[
+        Text("Num 1"),
+        new Flexible(
+            child: new TextField(
+          keyboardType: TextInputType.number,
+          controller: n,
+        ))
+      ],
+    );
   }
 }
